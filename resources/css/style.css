@@ -97,14 +97,36 @@ h3 {
 
 a .caption {
     text-decoration: underline;
+    color: lightblue;
 }
 
 .kippy-img img{
-    max-width: 90%;
+    width: 90%;
     margin-top: 0px;
     margin-left: 5%;
     border: 4px solid blue;
     border-radius: 4px;
+}
+
+.kippy-img p {
+    color: lightblue;
+}
+
+.display-inline {
+    width: 100%;
+    display: inline-flex;
+    overflow: visible;
+    justify-content: center;
+    margin: 20px 0px;
+    align-items: center;
+}
+
+.kippy-demo-vid {
+    margin-right: 40px;
+}
+
+.kippy-concept-art {
+    margin-left: 40px;
 }
 
 @font-face {
