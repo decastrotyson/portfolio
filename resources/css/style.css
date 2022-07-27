@@ -129,6 +129,46 @@ a .caption {
     margin-left: 40px;
 }
 
+hr {
+    color: white;
+}
+
+.marble-track-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.marble-track-container img {
+    max-width: 40%;
+    height: auto;
+    margin: 20px 2.5%;
+}
+
+.marble-track-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pyramid-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pyramid-img {
+    max-width: 40%;
+    height: auto;
+    margin: 20px 2.5%;
+}
+
+.pyramid-img img {
+    max-width: 100%;
+    height: auto;
+}
+
 @font-face {
     font-family: 'Cairo';
     font-style: normal;
