@@ -49,7 +49,8 @@ nav p:hover {
 
 video {
     display: block;
-    border: 2px solid white;
+    border: 4px solid white;
+    border-radius: 4px;
     margin: 10px 10px;
     padding-top: 20px;
     width: 98%;
@@ -72,6 +73,14 @@ h1 {
     text-align: center;
     text-decoration: underline;
     color: white;
+}
+
+h2 {
+    display: block;
+    color: white;
+    text-align: center;
+    line-height: 1.3em;
+    margin: 5px 0px 0px 0px;
 }
 
 h3 {
@@ -141,7 +150,7 @@ hr {
 }
 
 .marble-track-container img {
-    max-width: 40%;
+    max-width: 50%;
     height: auto;
     margin: 20px 2.5%;
 }
@@ -149,6 +158,49 @@ hr {
 .marble-track-img img {
     max-width: 100%;
     height: auto;
+}
+
+.marble-track-container2 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.marble-track-img2 {
+    width: 50%;
+}
+
+.marble-track-img2 img{
+    width: 90%;
+    margin-top: 0px;
+    margin-left: 5%;
+    border: 4px solid blue;
+    border-radius: 4px;
+}
+
+.hiking-container {
+    display: inline-flex;
+    width: 100%;
+    justify-items: center;
+}
+
+.hiking-container-img {
+    width: 42.5%;
+    margin-left: 5%;
+}
+
+.hiking-container-img img {
+    width: 100%;
+    height: auto;
+    border: 4px solid white;
+    border-radius: 4px;
+}
+
+.hiking-container-img a img {
+    border: 4px solid blue !important;
+    border-radius: 4px;
 }
 
 .pyramid-container {
@@ -167,6 +219,8 @@ hr {
 .pyramid-img img {
     max-width: 100%;
     height: auto;
+    border: 4px solid white;
+    border-radius: 4px;
 }
 
 @font-face {
