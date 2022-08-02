@@ -230,6 +230,43 @@ hr {
     margin-left: 20%;
 }
 
+.project-requirements {
+    color: white;
+}
+
+.project-requirements ul {
+    margin-left: 25%;
+}
+
+.project-requirements li {
+    color: white;
+}
+
+.one-image {
+    width: 70%;
+    margin-left: 15%;
+    border: 4px solid white;
+    border-radius: 4px;
+}
+
+.two-images-in-a-row {
+    width: 100%;
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.two-img{
+    width: 48%;
+    margin: 0px 1%;
+}
+
+.two-img img {
+    width: 100%;
+    border: 4px solid white;
+    border-radius: 4px;
+}
+
 @font-face {
     font-family: 'Cairo';
     font-style: normal;

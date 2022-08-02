@@ -42,5 +42,58 @@
             <a href="myOtherVideos.html"><p>My Other Videos</p></a>
         </div>
     </nav>
+
+    <h1>Current Project: Equalizer LED Display</h1>
+    <h3>Concept: Create a displaypiece to visualize music playing in real time.</h3>
+    <br>
+    <hr>
+    <div class="project-requirements">
+        <h3>Project Objectives:</h3>
+        <ul>
+            <li>Display the relative magnitude of 20 frequency bands spanning the audible spectrum (20Hz - 20kHz).</li>
+            <li>Apply passive/active filter design concepts towards filtering the music through hardware exclusively.</li>
+            <li>Use LTSpice to simulate and verify circuit design before building.</li>
+            <li>Provide sufficient power to the entire apparatus in a safe manner.</li>
+        </ul>
+    </div>
+    <hr>
+    <h3 class="sixty-percent-wide">I began by dividing the audible spectrum (20Hz - 20kHz) into 20 equal sections on a logarithmic scale.
+        I decided that using base 2 was appropriate because musical octaves also use a base 2 exponential scale.
+        <br>I drew up a simple band pass filter to separate the input signal.
+    </h3>
+    <img class="one-image" src="../resources/images/Eq-SimpleBandPassFilter.png" />
+    <p class="caption">(Above) Simple band pass filter used in first draft schematic</p>
+    <br>
+    <h3 class="sixty-percent-wide">For a band pass filter, this is as simple as it gets. The low number of
+        components drew me to this design, since I would be replicating this circuit 20 times over for the equalizer.
+    </h3>
+    <br>
+    <h3 class="sixty-percent-wide">I then picked component values and had my first schematic:</h3>
+    <img class="one-image" src="../resources/images/Eq-Schem1.png" />
+    <p class="caption">(Above) Equalizer Filters First Draft</p>
+
+    <h3 class="sixty-percent-wide">To verify that the circuit works as intended, I performed an AC Analysis
+        to view the outputs of each filter at various frequencies.
+    </h3>
+    <div class="two-images-in-a-row">
+        <div class="two-img">
+            <img src="../resources/images/Eq-Schem1-AC-Anal.png" />
+            <p class="caption">AC Analysis for all 20 filter outputs.</p>
+        </div>
+        <div class="two-img">
+            <img src="../resources/images/Eq-Schem1-AC-Anal-FiveFilters.png" />
+            <p class="caption">Bode Plot for the first five filter outputs.</p>
+        </div>
+    </div>
+    <h3> While this filter design is simple and cheap, I decided that the pass bands had too much overlap,
+        and that I would need a better filter to make my equalizer as selective as I want it to be.
+    </h3>
+    <hr>
+    <h3>After doing research on band pass filter design, I came across and settled upon this circuit,
+        which makes use of Operational Amplifiers (OpAmps).
+    </h3>
+    <img class="one-image" src="../resources/images/Eq-SimpleOpAmpBP.png" />
+    <p class="caption">Band pass filter with OpAmp.</p>
+
 </body>
 </html>
