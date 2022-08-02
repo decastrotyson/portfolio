@@ -225,6 +225,11 @@ hr {
     border-radius: 4px;
 }
 
+.sixty-percent-wide {
+    width: 60%;
+    margin-left: 20%;
+}
+
 @font-face {
     font-family: 'Cairo';
     font-style: normal;
