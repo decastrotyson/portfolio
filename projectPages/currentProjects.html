@@ -31,7 +31,7 @@
 </head>
 <body>
     <nav>
-        <div class="nav-logo">
+        <div class="nav-logo" id="top">
             <a href="../index.html"><img src="../resources/images/logo-temp.png"></a>
         </div>
         <div class="nav-buttons">
@@ -72,7 +72,7 @@
     <img class="one-image" src="../resources/images/Eq-Schem1.png" />
     <p class="caption">(Above) Equalizer Filters First Draft</p>
 
-    <h3 class="sixty-percent-wide">To verify that the circuit works as intended, I performed an AC Analysis
+    <h3 class="sixty-percent-wide"><br>To verify that the circuit works as intended, I performed an AC Analysis
         to view the outputs of each filter at various frequencies.
     </h3>
     <div class="two-images-in-a-row">
@@ -85,7 +85,7 @@
             <p class="caption">Bode Plot for the first five filter outputs.</p>
         </div>
     </div>
-    <h3> While this filter design is simple and cheap, I decided that the pass bands had too much overlap,
+    <h3 class="sixty-percent-wide"> While this filter design is simple and cheap, I decided that the pass bands had too much overlap,
         and that I would need a better filter to make my equalizer as selective as I want it to be.
     </h3>
     <hr>
@@ -94,6 +94,60 @@
     </h3>
     <img class="one-image" src="../resources/images/Eq-SimpleOpAmpBP.png" />
     <p class="caption">Band pass filter with OpAmp.</p>
+
+    <hr>
+
+    <h3 class="sixty-percent-wide">While this filter design has more complexity, the filter is much more selective 
+        than the previous design. I once again picked component values and came up with another schematic:
+    </h3>
+    <img class="one-image" src="../resources/images/Eq-Schem2.png" />
+    <p class="caption">Equalizer Filters V2.</p>
+    <br><br>
+    <img class="one-image" src="../resources/images/Eq-Schem2-AC-Anal.png" />
+    <p class="caption">AC Analysis for all 20 filter outputs.</p>
+
+    <br><br>
+    <h3 class="sixty-percent-wide">With steeper, more distinct peaks on the Bode Plot, this filter design
+        is much more selective; this will yield a better equalizer because each frequency component will only
+        affect one frequency band at a time.
+    </h3>
+
+    <hr>
+
+    <h3 class="sixty-percent-wide">I then got to work assembling each of these filters on a Perforated Circuit Board (PCB).
+        In hindsight, these were rather tedious to solder together, and in this application it would have been
+        more efficient to design a custom PCB and solder the components to it instead!
+    </h3>
+    <br>
+    <div class="two-images-in-a-row">
+        <div class="two-img">
+            <img src="../resources/images/Eq-1.jpg">
+        </div>
+        <div class="two-img">
+            <img src="../resources/images/Eq-2.jpg">
+            <h2 class="caption"><br>(Above) The first three assembled filters.</h2><br>
+            <h2 class="caption">(Left) Scribbled plan on how to connect all of the components.</h2>
+
+        </div>
+    </div>
+
+    <div class="two-images-in-a-row">
+        <div class="two-img">
+            <img src="../resources/images/Eq-3.jpg">
+            <h2 class="caption"><br>(Above) 19 of the 20 assembled filters.</h2><br>
+            <h2 class="caption">(Right) 15 of the filters connected to a power distribution board. 
+                The output of each filter is an Arduino, which will find the amplitude of the output and control
+                the lights accordingly.
+            </h2>
+        </div>
+        <div class="two-img">
+            <img src="../resources/images/Eq-4.jpg">
+        </div>
+    </div>
+
+    <div class="top-button">
+        <a href="#top"><h1>Go back to top</h1></a>
+    </div>
 
 </body>
 </html>
